@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: #eb0000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #eb0000;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            background: #fff;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #eb0000;
+        }
+        
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        
+        ul {
+            list-style: disc;
+            margin: 10px 0 10px 20px;
+        }
+
+        footer {
+            background: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 5 px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        form {
+            margin-top: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            background-color: #00a8eb;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        
+        form input[type="submit"]:hover {
+            background-color: #eb0000;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="content">
+        <h2>About Me</h2>
+        <p>Hello! I'm Emgie Guieb From ISPSC TAGUDIN CAMPUS a junior graphic designer with a passion for creating beautiful and functional designs. With experience in both print and digital media, I bring creativity and attention to detail to every project.<br> I also love playing Video Games and watching movies and series on daily basis to gather inspirations on my work as a Graphic Designer and Web Designer in the future.</p>
+        <img src="me.jpg" width="500" height="600">
+    </section>
+
+    <section id="skills" class="content">
+        <h2>Skills</h2>
+        <ul>
+            <li>Graphic Design</li>
+            <li>Web Design</li>
+            <li>HTML/CSS</li>
+            <li>Video Editing</li>
+            <li>Adobe Creative Suite</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="content">
+        <h2>Projects</h2>
+        <table>
+            <tr>
+                <th>Project</th>
+                <th>Description</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Project 1</td>
+                <td>BREN ESPORTS ANNOUNCEMENT POSTER</td>
+                <td><a href="https://www.behance.net/gallery/159665811/BREN-ESPORTS-ANNOUNCEMENT-POSTER?tracking_source=services_modal">View Project</a></td>
+            </tr>
+            <tr>
+                <td>Project 2</td>
+                <td>MOBILE LEGENDS TOURNAMENT LIVE STREAM SET UP</td>
+                <td><a href="https://www.facebook.com/share/p/r8rdPzp5dtLPdVBi/">View Project</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact" class="content">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <footer>
+        <p>EMGIE GUIEB, BSIT 3B ISPSC TAGUDIN CAMPUS</p>
+    </footer>
+
+</body>
+</html>
